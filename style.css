@@ -1,0 +1,15 @@
+:root {
+  --bgcolor-primary: #123456;
+  --bgcolor-secondary: #ff8000;
+  --bgcolor-light: whitesmoke;
+}
+
+body {
+  background-color: var(--bgcolor-primary);
+}
+
+@media (min-width:768px) {
+  .hideME {
+    display: none;
+  }
+}
