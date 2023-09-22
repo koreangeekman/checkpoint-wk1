@@ -17,18 +17,21 @@
 <body>
   <!-- SECTION HEADER -->
   <header class="container-fluid">
+
     <!-- SECTION NAV -->
     <nav class="row">
       <div class="col-12 p-2 ps-md-4">
-        <i class="mdi mdi-diamond-outline fs-1 d-inline"></i>
+        <i class="mdi mdi-diamond-outline fs-1 d-inline textSecondary"></i>
         <p class="fs-1 d-inline">Checkpoint Week One</p>
       </div>
     </nav>
     <!-- !SECTION NAV -->
-    <!-- !SECTION HERO IMAGE -->
+
+    <!-- SECTION HERO IMAGE -->
     <hero class="row pt-3 pb-5 p-md-4 pb-md-5">
       <div class="col-12 col-md-3">
         <p class="fs-5 px-md-2">SUBTLE HEADING</p>
+        <!-- SECTION FORM -->
         <form class="bgOffWhite m-md-2 p-3" action="submit">
           <p class="fs-5 fw-bold textSecondary">LESS SUBTLE HEADING</p>
           <input class="text-muted" type="text d-flex" id="formName" name="formName" value="NAME" size="30"><br>
@@ -41,8 +44,10 @@
           <small class="d-inline text-dark">By checking this box I admit to having not read the EULA.</small><br>
           <input type="submit" value="Submit" class="textSecondary">
         </form>
+        <!-- !SECTION FORM -->
       </div>
 
+      <!-- SECTION BLURB - HIDDEN ON MOBILE -->
       <div class="col-12 col-md-5 p-md-5 hideMeMobile">
         <div class="row">
           <div class="col-1">
@@ -55,9 +60,11 @@
           </div>
         </div>
       </div>
+      <!-- !SECTION BLURB - HIDDEN ON MOBILE -->
 
     </hero>
     <!-- !SECTION HERO IMAGE -->
+
   </header>
   <!-- !SECTION HEADER -->
 
@@ -68,6 +75,34 @@
 
   <!-- SECTION FOOTER -->
   <footer class="container-fluid">
+    <div class="row justify-content-around pt-2">
+      <div class="col-12 col-md-3 py-4 py-md-5 ps-md-5 centerMeMobile">
+        <p class="fs-5 fw-bold">LINKS</p>
+        <a href="#">HOME</a> <br>
+        <a href="#">SERVICES</a> <br>
+        <a href="#">RESOURCES</a> <br>
+        <a href="#">CAREERS</a> <br>
+      </div>
+      <div class="col-12 col-md-3 py-3 py-md-5 centerMeMobile">
+        <p class="fs-5 fw-bold">CONTACT</p>
+        <p>
+          <b>EMAIL </b>: info@company.net <br>
+          <b>PHONE </b>: +1 555-555-4321
+        </p>
+      </div>
+      <div class="col-12 col-md-3 py-4 py-md-5 fs-2 centerMeMobile">
+        <p class="fs-5 fw-bold">SOCIAL MEDIA</p>
+        <i class="mdi mdi-facebook"></i>
+        <i class="mdi mdi-linkedin"></i>
+        <i class="mdi mdi-twitter"></i>
+        <i class="mdi mdi-twitch"></i>
+        <i class="mdi mdi-instagram"></i>
+      </div>
+
+      <div class="col-12 bgOffWhite text-dark text-center py-3">
+        <i class="mdi mdi-copyright"></i> <small> All Rights Reserved</small>
+      </div>
+    </div>
   </footer>
   <!-- !SECTION FOOTER -->
 

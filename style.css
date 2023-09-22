@@ -20,6 +20,11 @@ form input {
   /* width: 100%; */
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
 .bgOffWhite {
   background-color: var(--color-light);
 }
@@ -46,5 +51,9 @@ form input {
 @media (max-width:768px) {
   .hideMeMobile {
     display: none;
+  }
+
+  .centerMeMobile {
+    text-align: center;
   }
 }
