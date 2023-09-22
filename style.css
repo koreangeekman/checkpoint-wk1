@@ -83,6 +83,7 @@ i {
 
 .card {
   color: black;
+  font-family: 'Shantell Sans', cursive;
 }
 
 .floatingCard {
@@ -95,6 +96,10 @@ i {
 
 .roundedCorners {
   border-radius: 5px;
+}
+
+.customFont {
+  font-family: 'Shantell Sans', cursive;
 }
 
 @media (max-width:768px) {
