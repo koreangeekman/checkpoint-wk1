@@ -12,11 +12,13 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
 </head>
 
-<body>
+<body class="debug">
   <!-- SECTION HEADER -->
-  <header class="container-fluid">
+  <header class="container-fluid ">
 
     <!-- SECTION NAV -->
     <nav class="row">
@@ -28,11 +30,11 @@
     <!-- !SECTION NAV -->
 
     <!-- SECTION HERO IMAGE -->
-    <hero class="row pt-3 pb-5 p-md-4 pb-md-5">
+    <hero class="row  pt-3 pb-5 p-md-4 pb-md-5">
       <div class="col-12 col-md-3">
         <p class="fs-5 px-md-2">SUBTLE HEADING</p>
         <!-- SECTION FORM -->
-        <form class="bgOffWhite m-md-2 p-3" action="submit">
+        <form class="bgOffWhite sectionShadow m-md-2 p-3" action="submit">
           <p class="fs-5 fw-bold textSecondary">LESS SUBTLE HEADING</p>
           <input class="text-muted" type="text d-flex" id="formName" name="formName" value="NAME" size="30"><br>
           <input class="text-muted" type="email" id="formEmail" name="formEmail" value="EMAIL" size="30"><br>
@@ -70,33 +72,127 @@
 
   <!-- SECTION MAIN -->
   <main class="container-fluid">
+
+    <!-- SECTION ABOUT -->
+    <div class="row">
+      <div class="col-12">
+
+        <!-- nested row -->
+        <div class="row p-3 p-md-5 justify-content-around">
+          <div class="col-12 col-md-4 order-2 order-md-1">
+            <p class="fs-3 fw-bold">Stay grounded with life stories</p>
+            <p>Every story has but one purpose: to be told.
+              Every story has but one aim: to be heard.
+              Every story has but one desire: to be remembered.
+              Let's see what kind of stories we can share.</p><br>
+          </div>
+          <div class="col-12 col-md-4 order-1 order-md-2 p-2 p-md-5 mb-4">
+            <div class="floatingCard boxShadow p-2 p-md-4">
+              <i class="fs-3 d-inline mdi mdi-theme-light-dark"></i>
+              <p class="d-inline"> Dark or Light - choose a side.</p><br>
+              <i class="fs-3 d-inline mdi mdi-weather-night"></i>
+              <p class="d-inline"> Are you afraid of the dark?</p><br>
+              <i class="fs-3 d-inline mdi mdi-flare"></i>
+              <p class="d-inline"> Are you afraid of the light?</p><br>
+              <i class="fs-3 d-inline mdi mdi-earth"></i>
+              <p class="d-inline"> What are you afraid?</p><br>
+              <i class="fs-3 d-inline mdi mdi-cog-outline"></i>
+              <p class="d-inline"> Reconfigure your perspectives.</p><br>
+            </div>
+          </div>
+        </div>
+
+        <!-- nested row -->
+        <div class="row text-dark bgWhite justify-content-md-around p-5">
+          <div class="col-12 col-md-5 p-0">
+            <img
+              src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=768&q=80"
+              alt="silhouette of a person looking up into the milky way" class="img-fluid roundedCorners">
+          </div>
+          <div class="col-12 col-md-5 mt-2 mt-md-5 pt-md-5 p-2">
+            <i class="mdi mdi-star-outline fs-1 textSecondary d-inline"></i>
+            <p class="fs-4 fw-bold d-inline">When results are demanded without care</p>
+            <p>Those with passions can excel.
+              Those with desires can dream.
+              Those with needs take action.
+              All of what can be is nothing without initiative.
+              Initiative is never found, it is always created.</p>
+            <button class="btn bgSecondary"> See More ></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!-- !SECTION ABOUT -->
+
+    <!-- SECTION CARDS -->
+    <div class="row bgOffWhite sectionShadow">
+      <div class="col-12 col-md-4 order-2 order-md-1 p-3 p-md-5 my-0 my-md-5">
+        <div class="card text-center boxShadow p-4">
+          <i class="mdi mdi-format-quote-open text-start"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur animi
+            officia eius assumenda possimus neque, natus voluptas!</p>
+          <i class="mdi mdi-format-quote-open text-end"></i>
+          <p class="textSecondary">-<i>review by</i> <br><b>Gandhi</b></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 order-1 order-md-2 p-3 p-md-3 mt-3 my-md-5">
+        <div class="card text-center boxShadow p-4">
+          <span class="fs-1 textSecondary">
+            <i class="mdi mdi-star-circle"></i>
+            <i class="mdi mdi-star-circle"></i>
+            <i class="mdi mdi-star-circle"></i>
+          </span>
+
+          <i class="mdi mdi-format-quote-open text-start"></i>
+          <p>Nemo eveniet ipsum, quas possimus rerum, vitae ut sint sapiente delectus placeat eum dignissimos,
+            exercitationem eius nam incidunt repellendus dicta voluptas veritatis?</p>
+          <i class="mdi mdi-format-quote-open text-end"></i>
+          <p class="textSecondary">-<i>review by</i> <br><b>Buddha</b></p>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 order-3 p-3 p-md-5 mb-3 my-md-5">
+        <div class="card text-center boxShadow p-4">
+          <i class="mdi mdi-format-quote-open text-start"></i>
+          <p>If there is a better place to live in this solar system, I haven't found it! I may be biased but it's
+            especially cozy around the north pole.</p>
+          <i class="mdi mdi-format-quote-open text-end"></i>
+          <p class="textSecondary">-<i>review by</i> <br><b>Santa Claus</b></p>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION CARDS -->
+
   </main>
   <!-- !SECTION MAIN -->
 
   <!-- SECTION FOOTER -->
   <footer class="container-fluid">
     <div class="row justify-content-around pt-2">
-      <div class="col-12 col-md-3 py-4 py-md-5 ps-md-5 centerMeMobile">
+      <div class="col-12 col-md-3 py-4 py-md-5 ps-md-5 sectionShadow centerMeMobile">
         <p class="fs-5 fw-bold">LINKS</p>
-        <a href="#">HOME</a> <br>
+        <a href="#top">HOME</a> <br>
         <a href="#">SERVICES</a> <br>
         <a href="#">RESOURCES</a> <br>
         <a href="#">CAREERS</a> <br>
       </div>
-      <div class="col-12 col-md-3 py-3 py-md-5 centerMeMobile">
+      <div class="col-12 col-md-3 py-3 py-md-5 ps-md-5 sectionShadow centerMeMobile">
         <p class="fs-5 fw-bold">CONTACT</p>
         <p>
-          <b>EMAIL </b>: info@company.net <br>
+          <b>EMAIL </b>: info@companyname.net <br>
           <b>PHONE </b>: +1 555-555-4321
         </p>
       </div>
-      <div class="col-12 col-md-3 py-4 py-md-5 fs-2 centerMeMobile">
+      <div class="col-12 col-md-3 py-4 py-md-5 ps-md-5 fs-2 sectionShadow centerMeMobile">
         <p class="fs-5 fw-bold">SOCIAL MEDIA</p>
         <i class="mdi mdi-facebook"></i>
         <i class="mdi mdi-linkedin"></i>
         <i class="mdi mdi-twitter"></i>
         <i class="mdi mdi-twitch"></i>
         <i class="mdi mdi-instagram"></i>
+        <i class="mdi mdi-youtube"></i>
       </div>
 
       <div class="col-12 bgOffWhite text-dark text-center py-3">

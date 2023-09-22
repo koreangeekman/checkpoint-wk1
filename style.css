@@ -23,10 +23,35 @@ form input {
 a {
   text-decoration: none;
   color: var(--color-secondary);
+  line-height: 1.8rem;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+i {
+  color: var(--color-secondary);
+}
+
+.bgWhite {
+  background-color: white;
 }
 
 .bgOffWhite {
   background-color: var(--color-light);
+}
+
+.bgPrimary {
+  background-color: var(--color-primary);
+}
+
+.bgSecondary {
+  background-color: var(--color-secondary);
+}
+
+.textWhite {
+  color: white;
 }
 
 .textPrimary {
@@ -48,6 +73,30 @@ a {
     -1px -2px 4px black;
 }
 
+.boxShadow {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.69);
+}
+
+.sectionShadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.69);
+}
+
+.card {
+  color: black;
+}
+
+.floatingCard {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+}
+
+.roundedCorners {
+  border-radius: 5px;
+}
+
 @media (max-width:768px) {
   .hideMeMobile {
     display: none;
@@ -55,5 +104,9 @@ a {
 
   .centerMeMobile {
     text-align: center;
+  }
+
+  .floatingCard {
+    position: relative;
   }
 }
