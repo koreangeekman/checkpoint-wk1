@@ -15,6 +15,11 @@ hero {
   background-position: center;
 }
 
+form {
+  /* width: 22rem; */
+  margin: auto;
+}
+
 form input {
   margin: .5rem 0;
   /* width: 100%; */

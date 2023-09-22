@@ -36,32 +36,52 @@
 
   <!-- SECTION HERO IMAGE -->
   <div class="container-fluid ">
-    <hero class="row  pt-3 pb-5 p-md-4 pb-md-5">
-      <div class="col-12 col-md-3">
+    <hero class="row pt-3 pb-5 p-md-4 pb-md-5">
+      <div class="col-12 col-md-4">
         <p class="fs-5 px-md-2">SUBTLE HEADING</p>
+
         <!-- SECTION FORM -->
-        <form class="bgOffWhite sectionShadow m-md-2 p-3" action="submit">
-          <p class="fs-5 fw-bold textSecondary">LESS SUBTLE HEADING</p>
-          <input class="text-muted" type="text d-flex" id="formName" name="formName" value="NAME" size="30"><br>
-          <input class="text-muted" type="email" id="formEmail" name="formEmail" value="EMAIL" size="30"><br>
-          <input class="text-muted" type="tel" id="formPhone" name="formPhone" value="PHONE" size="18">
-          <input class="text-muted" type="text" id="formExt" name="formExt" value="EXT." size="5"><br>
-          <textarea class="text-muted" type="text" id="formMessage" name="formMessage" value="MESSAGE" rows="6"
-            cols="32"></textarea><br>
-          <input class="d-inline" type="checkbox" id="formAgreed" name="formAgreed">
-          <small class="d-inline text-dark">By checking this box I admit to having not read the EULA.</small><br>
-          <input type="submit" value="Submit" class="textSecondary">
-        </form>
+        <div class="row">
+          <form class="bgOffWhite sectionShadow p-4" action="submit">
+            <div class="col-12">
+              <p class="fs-5 fw-bold textSecondary">LESS SUBTLE HEADING</p>
+            </div>
+            <div class="col-12">
+              <input class="form-control" type="text" id="formName" name="formName" value="NAME">
+            </div>
+            <div class="col-12">
+              <input class="form-control" type="email" id="formEmail" name="formEmail" value="EMAIL">
+            </div>
+            <div class="col-8">
+              <input class="form-control" type="tel" id="formPhone" name="formPhone" value="PHONE">
+            </div>
+            <div class="col-4">
+              <input class="form-control" type="tel" id="formExt" name="formExt" value="EXT.">
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" type="text" id="formMessage" name="formMessage" value="MESSAGE"
+                rows="4"></textarea>
+            </div>
+            <div class="col-12">
+              <input class="d-inline" type="checkbox" id="formAgreed" name="formAgreed">
+              <small class="d-inline text-dark">By checking this box I admit to having not read the EULA.</small><br>
+            </div>
+            <div class="col-2 justify-content-end">
+              <input type="submit" value="Submit" class="textSecondary">
+            </div>
+          </form>
+        </div>
         <!-- !SECTION FORM -->
+
       </div>
 
       <!-- SECTION BLURB - HIDDEN ON MOBILE -->
-      <div class="col-12 col-md-5 p-md-5 hideMeMobile">
+      <div class="col-12 col-md-6 p-md-5 hideMeMobile">
         <div class="row">
-          <div class="col-1">
+          <div class="col-2">
             <div class="vl"></div>
           </div>
-          <div class="col-11 textShadow">
+          <div class="col-10 textShadow">
             <p class="fs-1 fw-bold ">TEXT OVER AN IMAGE</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repudiandae libero numquam omnis!
               Velit autem laboriosam quo tempore quae quam, aspernatur architecto.</p>
@@ -83,14 +103,14 @@
 
         <!-- nested row -->
         <div class="row p-3 p-md-5 justify-content-around">
-          <div class="col-12 col-md-4 order-2 order-md-1">
+          <div class="col-12 col-md-5 order-2 order-md-1">
             <p class="fs-3 fw-bold">Stay grounded with life stories</p>
             <p>Every story has but one purpose: to be told.
               Every story has but one aim: to be heard.
               Every story has but one desire: to be remembered.
               Let's see what kind of stories we can share.</p><br>
           </div>
-          <div class="col-12 col-md-4 order-1 order-md-2 p-2 p-md-5 mb-4">
+          <div class="col-12 col-md-5 order-1 order-md-2 p-2 p-md-5 mb-4">
             <div class="floatingCard sectionShadow p-3 py-md-4 px-md-5">
               <i class="fs-3 d-inline mdi mdi-theme-light-dark"></i>
               <p class="d-inline"> Dark or Light - choose a side.</p><br>
@@ -99,7 +119,7 @@
               <i class="fs-3 d-inline mdi mdi-flare"></i>
               <p class="d-inline"> Are you afraid of the light?</p><br>
               <i class="fs-3 d-inline mdi mdi-earth"></i>
-              <p class="d-inline"> What are you afraid?</p><br>
+              <p class="d-inline"> What are you afraid of?</p><br>
               <i class="fs-3 d-inline mdi mdi-cog-outline"></i>
               <p class="d-inline"> Reconfigure your perspectives.</p><br>
             </div>
@@ -113,15 +133,17 @@
               src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=768&q=80"
               alt="silhouette of a person looking up into the milky way" class="img-fluid sectionShadow roundedCorners">
           </div>
-          <div class="col-12 col-md-5 mt-2 mt-md-5 pt-md-5 p-2">
-            <i class="mdi mdi-star-outline fs-1 textSecondary d-inline"></i>
-            <p class="fs-4 fw-bold d-inline">When results are demanded without care</p>
+          <div class="col-12 col-md-5 d-flex flex-column mt-2 mt-md-5 pt-md-5 p-2">
+            <span class="d-flex align-items-center">
+              <i class="mdi mdi-star-outline fs-1 textSecondary"></i>
+              <p class="fs-4 fw-bold">When results are demanded without care</p>
+            </span>
             <p>Those with passions can excel.
               Those with desires can dream.
               Those with needs take action.
               All of what can be is nothing without initiative.
               Initiative is never found, it is always created.</p>
-            <button class="btn bgSecondary"> See More ></button>
+            <button class="btn align-self-end bgSecondary">See More ></button>
           </div>
         </div>
 
