@@ -1,15 +1,50 @@
 :root {
-  --bgcolor-primary: #123456;
-  --bgcolor-secondary: #ff8000;
-  --bgcolor-light: whitesmoke;
+  --color-primary: #123456;
+  --color-secondary: #ff8000;
+  --color-light: whitesmoke;
 }
 
 body {
-  background-color: var(--bgcolor-primary);
+  background-color: var(--color-primary);
+  color: white;
 }
 
-@media (min-width:768px) {
-  .hideME {
+hero {
+  background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80);
+  object-fit: cover;
+  background-position: center;
+}
+
+form input {
+  margin: .5rem 0;
+  /* width: 100%; */
+}
+
+.bgOffWhite {
+  background-color: var(--color-light);
+}
+
+.textPrimary {
+  color: var(--color-primary);
+}
+
+.textSecondary {
+  color: var(--color-secondary);
+}
+
+.vl {
+  border-right: 3px solid var(--color-secondary);
+  height: 92%;
+}
+
+.textShadow {
+  text-shadow:
+    1px 2px 4px black,
+    -1px -2px 4px black;
+}
+
+@media (max-width:768px) {
+  .hideMeMobile {
     display: none;
   }
 }
